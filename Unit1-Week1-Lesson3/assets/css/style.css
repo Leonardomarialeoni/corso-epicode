@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+.sottotitolo {
+    background-color: rgb(245, 239, 151);
+    border-top: 2px solid rgb(236, 181, 29);
+    padding-bottom: 0.5em;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.immagine {text-align: center;}
+.bordosx {
+    padding-left: 20px;
+    border-left: 2px solid #e0480c;
+    color: rgb(236, 79, 5);
+}
+
+article {
+    text-align: left;
+}
+
+aside {
+    text-align: left;
+}
+
+.linea {
+    border-top: 1px solid #91abf1
+}
+
+footer {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
