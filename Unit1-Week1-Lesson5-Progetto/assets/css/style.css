@@ -69,7 +69,7 @@ header {
 }
 /*SECONDO ARTICLE/*/
 .quote {
-    padding: 10px ;
+    padding: 10% ;
     color: white;
     background-color: #e22d0e;
 }
@@ -83,6 +83,13 @@ blockquote {
     font-style: italic;
 }
 
+.author {
+    font-size: 1.4em;
+}
+cite {
+    font-style: normal;
+}
+
 .schede {
 
     height: 450px;
@@ -91,17 +98,29 @@ blockquote {
   border-radius: 5px;
 }
 
+#sezionedue {
+    padding-bottom: 80px;
+}
+
 /*FOOTER/*/
 footer {
     padding: 10px ;
     color: white;
     background-color: #25a2c3;
+    color: #c8e7f0;
 }
 
 #footer h2 {
     color: white;
 }
 
-a:link, a:visited {
+hr {
     color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+a:link, a:visited {
+    color: #c8e7f0;
 }
