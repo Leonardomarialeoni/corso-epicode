@@ -31,6 +31,7 @@ header {
 }
 
 /*MAIN/*/
+/*PRIMA SEZIONE/*/
 #sezioneuno {
     padding: 60px;
     background-image: url(../image/banner.jpg);
@@ -45,4 +46,62 @@ header {
     color: white;
     border-radius: 10px;
     background-color: #f04c2f;
+}
+
+/*SECONDA SEZIONE/*/
+/*PRIMO ARTICLE/*/
+#articolouno {
+    padding-top: 50px;
+}
+
+.dovevuoi {
+    padding-top: 20px;
+}
+
+.imgtonda {
+    padding: 30px;
+    width: 350px;
+    border-radius: 45%;
+}
+
+.lavoro {
+   padding-bottom: 40px;
+}
+/*SECONDO ARTICLE/*/
+.quote {
+    padding: 10px ;
+    color: white;
+    background-color: #e22d0e;
+}
+
+.quote h2 {
+    font-size: 2em;
+    color: white;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.schede {
+
+    height: 450px;
+    border: 2px solid #dee1e3;
+  margin: 8% ;
+  border-radius: 5px;
+}
+
+/*FOOTER/*/
+footer {
+    padding: 10px ;
+    color: white;
+    background-color: #25a2c3;
+}
+
+#footer h2 {
+    color: white;
+}
+
+a:link, a:visited {
+    color: white;
 }
