@@ -7,9 +7,12 @@ body {
     box-sizing: border-box;
     line-height: 1.65;
     margin: 0;
-} 
+}
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Montserrat', sans-serif;
     color: #25a2c3;
     line-height: 1.1;
@@ -24,12 +27,22 @@ h1 {
 header {
     background-color: black;
     padding: 40px;
-    
+
 }
 
 /*MAIN/*/
 #sezioneuno {
     padding: 60px;
-background-image: url(../image/banner.jpg);
-background-size: cover;
+    background-image: url(../image/banner.jpg);
+    background-size: cover;
+}
+
+.button {
+    padding: 20px 40px 20px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    background-color: #f04c2f;
 }
