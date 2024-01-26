@@ -50,26 +50,34 @@ header {
 
 /*SECONDA SEZIONE/*/
 /*PRIMO ARTICLE/*/
-#articolouno {
-    padding-top: 50px;
+.cercheranno {
+
+    margin: 10%;
 }
 
 .dovevuoi {
-    padding-top: 20px;
+
+    margin: 10%;
 }
 
 .imgtonda {
-    padding: 30px;
-    width: 350px;
-    border-radius: 45%;
+    width: 75%;
+    border-radius: 50%;
+}
+
+.ruolo {
+
+    margin: 10%;
 }
 
 .lavoro {
-   padding-bottom: 40px;
+    padding-bottom: 5%;
+    margin: 10%;
 }
+
 /*SECONDO ARTICLE/*/
 .quote {
-    padding: 10% ;
+    padding: 10%;
     color: white;
     background-color: #e22d0e;
 }
@@ -86,6 +94,7 @@ blockquote {
 .author {
     font-size: 1.4em;
 }
+
 cite {
     font-style: normal;
 }
@@ -94,17 +103,17 @@ cite {
 
     height: 450px;
     border: 2px solid #dee1e3;
-  margin: 8% ;
-  border-radius: 5px;
+    margin: 8%;
+    border-radius: 5px;
 }
 
 #sezionedue {
-    padding-bottom: 80px;
+    padding-bottom: 15%;
 }
 
 /*FOOTER/*/
 footer {
-    padding: 10px ;
+    padding: 5%;
     color: white;
     background-color: #25a2c3;
     color: #c8e7f0;
@@ -121,6 +130,8 @@ hr {
     margin-left: 30%;
     margin-right: 30%;
 }
-a:link, a:visited {
+
+a:link,
+a:visited {
     color: #c8e7f0;
 }
