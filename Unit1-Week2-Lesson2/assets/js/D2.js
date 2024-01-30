@@ -100,13 +100,20 @@ else { document.getElementById("esercizio5").innerHTML= 'costo dell\'ordine ' + 
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-let blackfriday = [(totalShoppingCart * 20) / 100]
+let blackfriday = ((totalShoppingCart * 20) / 100)
 
 if (totalShoppingCart - blackfriday < 50) {
   console.log('spedizione' + ' ' + '+' + shipping)
 }
 else {
   console.log('spedizione gratuita')
+}
+
+if (totalShoppingCart - blackfriday < 50) {
+  document.getElementById("esercizio6").innerHTML= 'costo dell\'ordine ' + totalShoppingCart
+}
+else {
+  document.getElementById("esercizio6").innerHTML= 'costo dell\'ordine ' + totalShoppingCart + ' + spedizione ' + shipping
 }
 
 /* ESERCIZIO 7
