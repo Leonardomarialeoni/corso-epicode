@@ -122,14 +122,18 @@ else {
   Alla fine mostra il risultato in console.
 */
 
-const numeri = [
-  x = 15,
-  y = 35,
-  z = 25
-]
-.sort()
-
+let x = 15
+let y = 35
+let z = 25
+const numeri = []
+numeri[0]=x
+numeri[1]=y
+numeri[2]=z
 console.log(numeri)
+
+ document.getElementById("esercizio7").innerHTML= numeri[1] + ',' + numeri[2] + ',' + numeri[0]
+
+
 
 
 /* ESERCIZIO 8
