@@ -5,10 +5,20 @@
 let number1 = 11;
 let number2 = 10;
 
-if (number1 < number2) {
-  console.log('minore')
+if (number1 < number2) {console.log('maggiore');
 }
-else { console.log('maggiore') }
+else if(number2 < number1) { 
+  console.log('minore');
+}
+else {console.log('sono guguali')}
+
+
+if (number1 < number2) {document.getElementById("esercizio1").innerHTML= number1 + 'e`maggiore di ' + number2;
+}
+else if(number2 < number1) { 
+  document.getElementById("esercizio1").innerHTML= number2 + ' e`minore di '+ number1;
+}
+else {document.getElementById("esercizio1").innerHTML= number1 + 'e ' + number2 + 'sono uguali';}
 
 
 /* ESERCIZIO 2
@@ -21,6 +31,9 @@ if (number1 !== number3) {
   console.log('not equal')
 }
 
+if (number1 !== number3) {
+  document.getElementById("esercizio2").innerHTML= number1 +' not equal '+ number3
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
@@ -30,6 +43,10 @@ let number4 = 20;
 
 if (number4 % 5 === 0) {
   console.log('divisibile per 5')
+}
+
+if (number4 % 5 === 0) {
+  document.getElementById("esercizio3").innerHTML= number4 + ' e` divisibile'
 }
 
 /* ESERCIZIO 4
@@ -50,17 +67,33 @@ else {
   console.log('non e`uguale a 8')
 }
 
+if (number3 + number5 === 8) {
+  document.getElementById("esercizio4").innerHTML= 'e` uguale a 8'
+}
+else { document.getElementById("esercizio4").innerHTML= 'e` diverso da 8'}
+
+if (number3 === 8 || number5 === 8) {
+  document.getElementById("esercizio4").innerHTML= 'si e`uguale a 8'
+}
+else {
+  document.getElementById("esercizio4").innerHTML= 'non e`uguale a 8'
+}
+
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-let totalShoppingCart = 40;
+let totalShoppingCart = 60;
 let shipping = 10;
 
 if (totalShoppingCart < 50) { console.log('spedizione' + ' ' + '+' + shipping) }
 else { console.log('spedizione gratuita') }
+
+if (totalShoppingCart < 50) { document.getElementById("esercizio5").innerHTML= 'costo dell\'ordine ' + totalShoppingCart }
+else { document.getElementById("esercizio5").innerHTML= 'costo dell\'ordine ' + totalShoppingCart + ' + spedizione ' + shipping }
+
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
