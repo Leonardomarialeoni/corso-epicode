@@ -221,28 +221,6 @@ console.log(me)
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/*let v1=1
-let v2=2
-let v3=3
-let v4=4
-let v5=5
-let v6=6
-let v7=7
-let v8=8
-let v9=9
-let v10=10
-
-const listaVuota[]
-listaVuota[0]=v1
-listaVuota[1]=v2
-listaVuota[2]=v3
-listaVuota[3]=v4
-listaVuota[4]=v5
-listaVuota[5]=v6
-listaVuota[6]=v7
-listaVuota[7]=v8
-listaVuota[8]=v9
-listaVuota[9]=v10
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
