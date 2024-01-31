@@ -212,7 +212,7 @@ else if (crewMass > 1000) { console.log('DANGER! OVERLOAD ALERT: escape from shi
 */
 
 for (i = 0; i < starWarsCharacters.length; i++) {
-  if (starWarsCharacters[i].gender === 'n/a') {starWarsCharacters[i].gender === 'robot'}
+  if (starWarsCharacters[i].gender === 'n/a') { starWarsCharacters[i].gender === 'robot' }
 }
 
 console.log(starWarsCharacters)
@@ -222,7 +222,17 @@ console.log(starWarsCharacters)
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 
+console.log(starWarsCharacters.length)
 
+for (let i = 0; i < characterNames.length; i++) {
+  for (let j = 0; j < femaleCharacters.length; j++) {
+    if (femaleCharacters[j].name === characterNames[i]) {
+      characterNames.splice(i, 1);
+    }
+  }
+}
+
+console.log(characterNames)
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
