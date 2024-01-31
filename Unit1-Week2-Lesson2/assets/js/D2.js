@@ -5,20 +5,22 @@
 let number1 = 11;
 let number2 = 10;
 
-if (number1 < number2) {console.log('maggiore');
+if (number1 < number2) {
+  console.log('maggiore');
 }
-else if(number2 < number1) { 
+else if (number2 < number1) {
   console.log('minore');
 }
-else {console.log('sono guguali')}
+else { console.log('sono guguali') }
 
 
-if (number1 < number2) {document.getElementById("esercizio1").innerHTML= number1 + 'e`maggiore di ' + number2;
+if (number1 < number2) {
+  document.getElementById("esercizio1").innerHTML = number1 + 'e`maggiore di ' + number2;
 }
-else if(number2 < number1) { 
-  document.getElementById("esercizio1").innerHTML= number2 + ' e`minore di '+ number1;
+else if (number2 < number1) {
+  document.getElementById("esercizio1").innerHTML = number2 + ' e`minore di ' + number1;
 }
-else {document.getElementById("esercizio1").innerHTML= number1 + 'e ' + number2 + 'sono uguali';}
+else { document.getElementById("esercizio1").innerHTML = number1 + 'e ' + number2 + 'sono uguali'; }
 
 
 /* ESERCIZIO 2
@@ -32,7 +34,7 @@ if (number1 !== number3) {
 }
 
 if (number1 !== number3) {
-  document.getElementById("esercizio2").innerHTML= number1 +' not equal '+ number3
+  document.getElementById("esercizio2").innerHTML = number1 + ' not equal ' + number3
 }
 
 /* ESERCIZIO 3
@@ -46,7 +48,7 @@ if (number4 % 5 === 0) {
 }
 
 if (number4 % 5 === 0) {
-  document.getElementById("esercizio3").innerHTML= number4 + ' e` divisibile'
+  document.getElementById("esercizio3").innerHTML = number4 + ' e` divisibile'
 }
 
 /* ESERCIZIO 4
@@ -68,15 +70,15 @@ else {
 }
 
 if (number3 + number5 === 8) {
-  document.getElementById("esercizio4").innerHTML= 'e` uguale a 8'
+  document.getElementById("esercizio4").innerHTML = 'e` uguale a 8'
 }
-else { document.getElementById("esercizio4").innerHTML= 'e` diverso da 8'}
+else { document.getElementById("esercizio4").innerHTML = 'e` diverso da 8' }
 
 if (number3 === 8 || number5 === 8) {
-  document.getElementById("esercizio4").innerHTML= 'si e`uguale a 8'
+  document.getElementById("esercizio4").innerHTML = 'si e`uguale a 8'
 }
 else {
-  document.getElementById("esercizio4").innerHTML= 'non e`uguale a 8'
+  document.getElementById("esercizio4").innerHTML = 'non e`uguale a 8'
 }
 
 /* ESERCIZIO 5
@@ -91,8 +93,8 @@ let shipping = 10;
 if (totalShoppingCart < 50) { console.log('spedizione' + ' ' + '+' + shipping) }
 else { console.log('spedizione gratuita') }
 
-if (totalShoppingCart < 50) { document.getElementById("esercizio5").innerHTML= 'costo dell\'ordine ' + totalShoppingCart }
-else { document.getElementById("esercizio5").innerHTML= 'costo dell\'ordine ' + totalShoppingCart + ' + spedizione ' + shipping }
+if (totalShoppingCart < 50) { document.getElementById("esercizio5").innerHTML = 'costo dell\'ordine ' + totalShoppingCart }
+else { document.getElementById("esercizio5").innerHTML = 'costo dell\'ordine ' + totalShoppingCart + ' + spedizione ' + shipping }
 
 
 /* ESERCIZIO 6
@@ -110,10 +112,10 @@ else {
 }
 
 if (totalShoppingCart - blackfriday < 50) {
-  document.getElementById("esercizio6").innerHTML= 'costo dell\'ordine ' + totalShoppingCart
+  document.getElementById("esercizio6").innerHTML = 'costo dell\'ordine ' + totalShoppingCart
 }
 else {
-  document.getElementById("esercizio6").innerHTML= 'costo dell\'ordine ' + totalShoppingCart + ' + spedizione ' + shipping
+  document.getElementById("esercizio6").innerHTML = 'costo dell\'ordine ' + totalShoppingCart + ' + spedizione ' + shipping
 }
 
 /* ESERCIZIO 7
@@ -125,14 +127,20 @@ else {
 let x = 15
 let y = 35
 let z = 25
-const numeri = []
-numeri[0]=x
-numeri[1]=y
-numeri[2]=z
-console.log(numeri)
+let arrayOrdina = document.getElementById("esercizio7");
 
- document.getElementById("esercizio7").innerHTML= numeri[1] + ',' + numeri[2] + ',' + numeri[0]
-
+if (x > y) {
+  if (z > x) { arrayOrdina.innerHTML = z + ',' + x + ',' + y; }
+  else (z > y) ;{
+    arrayOrdina.innerHTML = x + ',' + z + ',' + y;
+  }
+}
+if (x < y) {
+  if (z > x) { arrayOrdina.innerHTML = y + ',' + z + ',' + x; }
+  else (z < x) ;{
+    arrayOrdina.innerHTML = y + ',' + x + ',' + z;
+  }
+}
 
 
 
@@ -140,21 +148,21 @@ console.log(numeri)
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-let k='bici'
+let k = 'bici'
 
-if(typeof k === "number"){console.log('k e`un numero')}
-else{console.log('k non e` un numero')}
+if (typeof k === "number") { console.log('k e`un numero') }
+else { console.log('k non e` un numero') }
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-let a=27
+let a = 27
 
 if (a % 2 === 0) {
   console.log('pari')
 }
-else{console.log('dispari')}
+else { console.log('dispari') }
 
 
 /* ESERCIZIO 10
@@ -171,12 +179,12 @@ else{console.log('dispari')}
 
 let val = 10
 if (val < 5) {
-    console.log("Meno di 5");
-  } else if (val < 10) {
-    console.log("Meno di 10");
-  } else {
-    console.log("Uguale a 10 o maggiore");
-  }
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -188,7 +196,7 @@ const me = {
   skills: ['javascript', 'html', 'css'],
 }
 
-me.city= 'Toronto'
+me.city = 'Toronto'
 
 console.log(me)
 
@@ -213,7 +221,28 @@ console.log(me)
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*let v1=1
+let v2=2
+let v3=3
+let v4=4
+let v5=5
+let v6=6
+let v7=7
+let v8=8
+let v9=9
+let v10=10
+
+const listaVuota[]
+listaVuota[0]=v1
+listaVuota[1]=v2
+listaVuota[2]=v3
+listaVuota[3]=v4
+listaVuota[4]=v5
+listaVuota[5]=v6
+listaVuota[6]=v7
+listaVuota[7]=v8
+listaVuota[8]=v9
+listaVuota[9]=v10
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
