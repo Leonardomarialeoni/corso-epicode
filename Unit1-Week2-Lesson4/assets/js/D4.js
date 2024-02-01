@@ -68,25 +68,51 @@ console.log(boundary(45))
  ritornare la stringa originale senza alterarla.
 */
 
-/*const stringa = 'corso full stack'
-const risultato = stringa.search(EPICODE)
-
 function epify(stringa) {
-    if ()
+    if (stringa.startsWith('EPICODE')) {
+        return stringa;
+    }
+    else {
+        return 'EPICODE ' + stringa;
+    }
 }
+
+console.log('***ESERCIZIO 5***')
+console.log(epify('corso full stack'))
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function check3and7(numero) {
+    if (numero % 3 === 0) {
+        return console.log('e` un multiplo di 3')
+    }
+    else if (numero % 7 ===0){
+        return  console.log('e` un multiplo di 7')
+    }
+    else {
+        return console.log('non e` un multiplo ne di 3 ne di 7')
+    }
+}
+
+console.log('***ESERCIZIO 6***')
+console.log(check3and7(43))
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function reverseString(stringa) {
+    let arrayStringa = stringa.split('');
+    let arrayInvertito = arrayStringa.reverse();
+    let stringaFinale = arrayInvertito.join('');
+    return stringaFinale ;
+}
+
+console.log('***ESERCIZIO 7***')
+console.log(reverseString('LEONARDO'))
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
