@@ -150,19 +150,67 @@ for (let i = 0; i < charactersArray.length; i++) {
 
   switch (charactersArray[i]) {
     case "a":
-     nuovoArray.push(charactersArray[i]);
+     nuovoArray.push(1);
       break;
     case "b":
-      nuovoArray.push(charactersArray[i]);
+      nuovoArray.push(2);
       break;
     case "c":
-      nuovoArray.push(charactersArray[i]);
+      nuovoArray.push(3);
       break;
     case "d":
-      nuovoArray.push(charactersArray[i]);
+      nuovoArray.push(4);
       break;
     case "e":
-      nuovoArray.push(charactersArray[i]);
+      nuovoArray.push(5);
+      break;
+    case "f":
+      nuovoArray.push(6);
+      break;
+    case "g":
+      nuovoArray.push(7);
+      break;
+    case "h":
+      nuovoArray.push(8);
+      break;
+    case "i":
+      nuovoArray.push(9);
+      break;
+    case "l":
+      nuovoArray.push(10);
+      break;
+    case "m":
+      nuovoArray.push(11);
+      break;
+    case "n":
+      nuovoArray.push(12);
+      break;
+    case "o":
+      nuovoArray.push(13);
+      break;
+    case "p":
+      nuovoArray.push(14);
+      break;
+    case "q":
+      nuovoArray.push(15);
+      break;
+    case "r":
+      nuovoArray.push(16);
+      break;
+    case "s":
+      nuovoArray.push(17);
+      break;
+    case "t":
+      nuovoArray.push(18);
+      break;
+    case "u":
+      nuovoArray.push(19);
+      break;
+    case "v":
+      nuovoArray.push(20);
+      break;
+    case "z":
+      nuovoArray.push(21);
       break;
     default:
       break;
