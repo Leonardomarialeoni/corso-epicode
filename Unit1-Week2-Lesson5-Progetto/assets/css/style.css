@@ -1,0 +1,81 @@
+/*IMPOSTAZIONI GENERALI/*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+
+}
+
+
+/*HEADER/*/
+header {
+    text-align: left;
+
+}
+
+header div {
+    padding: 1%;
+    background-color: #222F3F;
+}
+
+header nav {
+    padding: 1%;
+    background-color: #364759;
+}
+
+nav a:link,
+nav a:visited {
+    padding-right: 1%;
+    color: white;
+    text-decoration: none;
+}
+
+/*MAIN/*/
+
+main {
+    background-color: #E9EDEE;
+
+}
+
+#contenitore {
+    background-color: #E9EDEE;
+    margin: 0;
+
+}
+
+div p {
+    color: white;
+    background-color: #F46600;
+    padding: 10px;
+    margin: 2%;
+
+}
+
+#gift {
+    margin: 2%;
+    padding: 2%;
+    color: white;
+    background-image: url(../images/bg-image.png);
+    background-size: auto;
+}
+
+/*PRIMO ARTICOLO/*/
+
+#articolouno {
+    margin: 2%;
+    background-color: white;
+
+}
+
+#articolouno span {
+    text-align: left;
+}
+
+#articolouno h3 {
+    color: #1E6070;
+
+}
+
+.img {
+    display: inline;
+}
