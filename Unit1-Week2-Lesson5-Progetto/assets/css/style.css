@@ -79,3 +79,23 @@ div p {
 .img {
     display: inline;
 }
+
+/*FOOTER/*/
+
+footer div {
+    padding: 1%;
+    background-color: #222F3F;
+}
+
+footer nav {
+    padding: 1%;
+    background-color: #364759;
+}
+
+footer a:link,
+footer a:visited {
+    padding-right: 1%;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
