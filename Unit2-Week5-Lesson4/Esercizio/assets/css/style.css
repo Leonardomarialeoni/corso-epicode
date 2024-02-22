@@ -1,0 +1,69 @@
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#jumbotron {
+
+    padding: 100px ;
+    margin: 50px;
+    border-radius: 45px;
+    border: 2px solid black;
+    width: auto;
+    background-color: aqua;
+}
+
+#jumbotron img {
+    width: 300px;
+}
+
+#jumbotron:hover {
+    animation: cambioColore 4s linear 0s;
+    rotate: 0deg;
+}
+
+@keyframes cambioColore {
+    from {
+        background-color: aqua; 
+    }
+
+    10% {rotate: 45deg ;
+
+    }
+
+    25% {
+        background-color: green; 
+    }
+
+    40% {rotate: 90deg ;
+
+    }
+
+    50% {
+        background-color: blue; 
+    }
+
+    60% {rotate: 135deg ;
+
+    }
+
+    75% {background-color: blueviolet;
+
+    }
+
+    80% {rotate: 180deg ;
+
+    }
+
+    to {
+        background-color: red; 
+    }
+}

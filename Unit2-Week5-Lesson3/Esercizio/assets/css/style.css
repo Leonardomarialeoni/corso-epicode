@@ -1,0 +1,155 @@
+/*GENERALE*/
+* {
+    border: 1px solid black;
+}
+
+/*BODY*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: center;
+    color: #812A04;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+/*HEADER*/
+
+
+nav {
+    
+    background-color: #FEF7E2;
+    padding: 30px;
+    display: flex;
+        
+}
+
+.infoButton {
+    margin: 5px;
+    background-color: #FFDF7F;
+    border-radius: 50px;
+    width: 15%;
+}
+
+
+#logoButton {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 32px;
+}
+
+.infoButton img {
+    width: 50px;
+}
+
+/*MAIN*/
+
+
+/*ARTICLE*/
+.scheda {
+    border-radius: 45px;
+    background-color: #FEF7E2;
+    background-image: url(../imgs/honey.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+
+}
+
+article {
+    display: flex;
+    
+    padding: 10px;
+}
+
+aside {
+    padding: 20px;
+    margin: 10px;
+    background-color: #FEF7E2;
+}
+
+aside div img {
+    width: 100%;
+}
+
+/*ASIDE*/
+
+
+/*QUERY*/
+
+/*QUERY HEADER*/
+@media screen and (min-width: 576px) {
+nav {
+    background-color: #FEF7E2;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 45px;
+    justify-content: center;
+    
+}
+
+.infoButton {
+    background-color: #FFDF7F;
+    border-radius: 50px;
+    width: 15%;
+}
+
+
+#logoButton {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 32px;
+}
+
+.infoButton img {
+    width: 50px;
+}
+}
+
+/*QUERY MAIN*/
+@media screen and (min-width: 576px) {
+
+    .scheda {
+        border-radius: 45px;
+        background-color: #FEF7E2;
+        background-image: url(../imgs/honey.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40%;
+    
+    }
+    
+    article {
+        display: flex;
+        
+        padding: 10px;
+    }
+    
+    aside {
+        padding: 20px;
+        margin: 10px;
+        background-color: #FEF7E2;
+    }
+    
+    aside div img {
+        width: 100%;
+    }
+    article {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+
+    }
+
+    article :last-child {
+        display: none;
+    }
+}
