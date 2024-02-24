@@ -18,7 +18,6 @@ header {
 }
 
 nav {
-    background-color: #ffc017;
     border-bottom: 1px solid black;
     padding: 20px;
     display: flex;
@@ -26,6 +25,15 @@ nav {
     justify-content: center;
     justify-content: space-between;
     align-items: center;
+}
+
+nav.yellowBackground {
+    background-color: #ffc017;
+
+}
+
+nav.whiteBackground {
+    background-color: white;
 
 }
 
@@ -42,11 +50,19 @@ nav {
 #started {
     padding: 1px 10px;
     color: white;
-    background-color: black;
+    
     border-radius: 30px;
     height: 30px;
     display: flex;
     align-items: center;
+}
+
+#started.blackBackground {
+    background-color: black;
+}
+
+#started.greenBackground {
+    background-color: green;
 }
 
 nav img {
@@ -197,14 +213,10 @@ span h1 {
 
 /*SEZIONE 3*/
 
-#tre *{
-    border: 1px solid black;
-}
-
 #tre {
     padding: 30px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 /*ARTICLE NOTIZIE*/
@@ -212,13 +224,12 @@ span h1 {
 #notizie {width: 60%;}
 
 .notizia {
-    width: 700px;
+    width: 680px;
     height: 200px;
-    margin-left: 30px;
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    align-content: start;
+    align-items: center;
 }
 
 .scrittore {
@@ -236,7 +247,9 @@ span h1 {
 }
 
 .scrittore span {
-    width: 200px;
+    width: 300px;
+    margin-left: 3px;
+    font-weight: bold;
 }
 
 .foto {
@@ -253,5 +266,55 @@ span h1 {
 .fotoNotizia img {
     width: 200px;
     height: 150px;
+    margin-left: 15px;
 }
+
+.dataArticolo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dataArticolo p {
+    display: flex;
+    align-items: center;
+}
+
+.dataArticolo img {margin-left: 3px;}
 /*ARTICLE DISCOVER*/
+
+#discover {
+    width: 30%;
+    margin-left: 10px;
+}
+
+#argomenti {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.argomento {
+    padding: 7px 7px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(211, 211, 211, 0.651);
+    border-radius: 15px;
+}
+
+#discover hr {
+    opacity: 10%;
+    margin: 20px 5px;
+}
+
+#utili {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.utile {
+    color: rgba(143, 143, 143, 0.925);
+    padding: 2px 3px;
+    margin-bottom: 3px;
+}
