@@ -27,4 +27,6 @@ const init = () => {
 
 };
 
+
 window.addEventListener("scroll", init);
+
