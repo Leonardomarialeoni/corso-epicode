@@ -2,3 +2,49 @@ body {
     background-color: black;
 }
 
+#icone a {
+    padding: 7px;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.carousel-item img {
+    margin: 5px;
+    opacity: 0.7;
+}
+
+.carousel-item img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-item img {
+        width: 150px;
+        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-item img {
+        width: 200px;
+        
+    }
+}
+
+footer a{
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#social {
+    margin-bottom: 20px;
+}
+
+#service {
+    
+    padding: 6px;
+    border: 1px solid grey;
+    
+}
