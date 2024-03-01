@@ -1,0 +1,35 @@
+html,body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.jumbotron{
+    background-color: rgb(99, 33, 161);
+    height: 64.8vh;
+}
+
+.icon{
+    background-color: antiquewhite;
+    color: brown;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.footerText{
+    color: rgb(61, 26, 94);
+}
+
+.carta{
+width: 250px;
+
+
+}

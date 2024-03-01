@@ -1,0 +1,109 @@
+$setColori:(
+    blu:#0e6cff,
+    arancione:#ff8700,
+    verde:#4caf50
+);
+
+@mixin display($display, $justify, $align:start, $direction:row) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+header {
+    background-color: #640FC5;
+    @include display(flex, center);
+}
+
+#container {
+    width: 90%;
+    @include display(flex, center, start ,column );
+    
+}
+
+header nav {
+    padding: 40px 60px;
+    @include display(flex,space-between ,center);
+    
+}
+
+#logo img {
+    width: 100px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+#link a {
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+#link a:hover {
+    color: orange;
+}
+
+#hero {
+    height: 35vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+#hero img {
+    width: 35%;
+    border: 2px solid rgb(184, 102, 223);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.4),
+        0px 7px 13px -3px rgba(0, 0, 0, 0.3),
+        0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+    position: relative;
+    top: 20px;
+}
+
+#testo {
+    width: 60%;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+#testo h1 {
+    width: 60%;
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    opacity: 60%;
+    letter-spacing: -5px;
+}
+
+#testo p {
+    color: rgb(202, 129, 245);
+}
+
+
+
+.btn1 {
+    margin: 15px 5px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: map-get($map: $setColori, $key: blu );
+}
+
+.btn2 {
+    @extend .btn1;
+    background-color: map-get($map: $setColori, $key: arancione );
+}
+
+.btn3 {
+    @extend .btn1;
+    background-color: map-get($map: $setColori, $key: verde );
+}
