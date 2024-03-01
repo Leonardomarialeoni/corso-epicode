@@ -18,20 +18,6 @@ body {
     opacity: 1;
 }
 
-@media screen and (min-width: 768px) {
-    .carousel-item img {
-        width: 150px;
-        
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .carousel-item img {
-        width: 200px;
-        
-    }
-}
-
 footer a{
     color: grey;
     text-decoration: none;
@@ -41,6 +27,8 @@ footer a{
 #social {
     margin-bottom: 20px;
 }
+
+
 
 #service {
     
