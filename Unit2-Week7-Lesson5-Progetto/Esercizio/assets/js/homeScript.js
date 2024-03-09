@@ -12,7 +12,7 @@ const caricaOggetti = async () => {
                 "Authorization": accessToken
             }
         });
-        const data = await response.json();
+        let data = await response.json();
         oggetti = data;
         console.log(oggetti);
         print(oggetti);
@@ -32,8 +32,8 @@ function print() {
                 <h5 class="card-title">${oggetti[i].name}</h5>
                 <p>${oggetti[i].description} </p>
                 <div>
-                    <button class="btn btn-warning")><a href="backOffice.html" class="text-decoration-none text-dark">Modifica</a></button>
-                    <button class="btn btn-info mt-2"><a href="dettaglio.html(${oggetti[i]._id})" class="text-decoration-none text-dark">Scopri di piu</a></button>
+                    <button class="btn btn-warning")><a href="backOffice.html?id=${oggetti._id}" class="text-decoration-none text-dark">Modifica</a></button>
+                    <button class="btn btn-info mt-2"><a href="dettaglio.html?id=${oggetti._id})" class="text-decoration-none text-dark">Scopri di piu</a></button>
                 </div>
             </div>
         </div>`;

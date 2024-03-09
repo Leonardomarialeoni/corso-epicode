@@ -45,13 +45,10 @@
                 <label for="formGroupExampleInput2" class="form-label">Descrizione prodotto</label>
                 <input type="text" class="form-control" id="descrizione" placeholder="">
             </div>
-            <div class="d-flex justify-content-start">
-                <div class="col-2">
-                    <button  id="reset" class="btn btn-light border-black px-5">Reset</button>
-                </div>
-                <div class="col-2">
-                    <button  id="salva" class="btn btn-warning px-5" onclick="caricaOggetti()">Save</button>
-                </div>
+            <div class="form-group d-flex justify-content-end mt-4">
+                <button type="button" id="cancella" class="btn btn-danger me-auto w-25" onclick="eliminaOggetti()">🗑️</button>
+                    <button  type="reset" id="reset" class="btn btn-light border-black px-5">Reset</button>
+                    <button  id="salva" class="btn btn-warning px-5" onclick="aggiungiOggetti()">Save</button>
             </div>
 
         
