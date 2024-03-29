@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img [src]="image" class="card-img" alt="immagine user">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title">{{firstName + '' + lastName}}</h2>
+                <p class="card-text">{{title}}</p>
+                <div class="form-group">
+                    <app-tasklist [todolist]="userTaskList"></app-tasklist>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

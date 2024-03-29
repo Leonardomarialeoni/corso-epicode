@@ -1,37 +1,19 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../interfaces/user.interfaces';
 import { UtilsService } from '../services/utils.service';
+import { Todo } from '../interfaces/todo.interfaces';
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss']
 })
-export class UsersComponent {
-  @Input() id!: number;
-  @Input() todo!: string;
-  @Input() completed!: boolean;
-  @Input() userId!: number;
-  
-  usersList: User[] = [];
-  todolist: any;
-
-
-  constructor(private utilsService: UtilsService) {}
-
-  ngOnInit(): void {
-    this.todolist = this.utilsService.getTodos();
-    this.usersList = this.utilsService.getUsers();
-  }
-
-  getUserById(userId: number) {
-    const target = this.usersList.find((user: User) => {
-      return userId === user.id;
-    });
-    return target?.firstName + ' ' + target?.lastName;
-  }
-
-  checkBoxValue() {
-    this.completed = !this.completed;
-  }
+export class UsersComponent implements OnInit {
+  usersList!: User[]
+  todoList!: Todo[]
+constructor (private utilsService: UtilsService) {}
+ngOnInit(): void {
+  this.usersList = this.utilsService.getUsers()
+  this.todoList = this.utilsService.getTodos()
+}
 }

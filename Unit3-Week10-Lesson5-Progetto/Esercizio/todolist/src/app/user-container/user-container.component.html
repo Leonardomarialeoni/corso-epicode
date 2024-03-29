@@ -1,0 +1,13 @@
+<div>
+    <div *ngFor="let user of usersList">
+        <app-user
+        [id]="user.id"
+        [firstName]="user.firstName"
+        [lastName]="user.lastName"
+        [email]="user.email"
+        [image]="user.image"
+        [title]="user.title"
+        [todoList]="todoList"
+        ></app-user>
+    </div>
+</div>

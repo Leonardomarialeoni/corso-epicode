@@ -10,6 +10,9 @@ import { TodoComponent } from './todo/todo.component';
 import { TaskComponent } from './task/task.component';
 import { TasklistComponent } from './tasklist/tasklist.component';
 import { UtilsService } from './services/utils.service';
+import { ButtonContainerComponent } from './button-container/button-container.component';
+import { UserContainerComponent } from './user-container/user-container.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -21,6 +24,9 @@ import { UtilsService } from './services/utils.service';
     TodoComponent,
     TaskComponent,
     TasklistComponent,
+    ButtonContainerComponent,
+    UserContainerComponent,
+    UserComponent,
     
   ],
   imports: [
