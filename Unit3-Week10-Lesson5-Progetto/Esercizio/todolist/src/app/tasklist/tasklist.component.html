@@ -1,0 +1,10 @@
+<div>
+    <div *ngFor="let todo of todolist">
+        <app-task
+        [completed]="todo.completed"
+        [id]="todo.id"
+        [todo]="todo.todo"
+        [userId]="todo.userId"
+        ></app-task>
+    </div>
+</div>

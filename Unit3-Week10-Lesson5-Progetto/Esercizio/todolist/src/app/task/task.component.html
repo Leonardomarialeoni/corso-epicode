@@ -1,0 +1,11 @@
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-body" [ngClass]="{'completed': completed === true, 'uncompleted': completed === false}">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="exampleCheckbox" [checked]="completed" (change)="checkBoxValue()">
+                <label class="form-check-label" for="exampleCheckbox">{{todo}}</label>
+                <p class="mt-3">Assigned to: {{getUserById(userId)}} </p>
+            </div>
+        </div>
+    </div>
+</div>
