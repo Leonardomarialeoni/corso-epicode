@@ -20,7 +20,8 @@
           <a class="nav-link text-white" routerLink="/profile">Profilo</a>
         </li>
       </ul>
-      <button class="btn btn-outline-danger" type="button"><a class="nav-link" routerLink="/login">Log in</a></button>
+      <button class="btn btn-outline-danger" type="button" *ngIf="isLogged === false"><a class="nav-link" routerLink="/login" >Log in</a></button>
+      <button class="btn btn-outline-danger" type="button" *ngIf="isLogged === true" (click)="logOut()"><a class="nav-link" routerLink="/login">Log out</a></button>
     </div>
   </div>
 </nav>

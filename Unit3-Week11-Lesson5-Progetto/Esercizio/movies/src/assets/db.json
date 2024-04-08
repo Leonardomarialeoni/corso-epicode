@@ -2,13 +2,13 @@
   "users": [
     {
       "email": "dario@dario.com",
-      "password": "$2a$10$ZLY63quWnMVo0lO951uFdOJRfUxeo8U6YJ/Cue06Vgp4Ad8S/CjaC",
+      "password": "password01",
       "name": "Dario",
       "id": 2
     },
     {
       "email": "mario@rossi.com",
-      "password": "$2a$10$RsIosJKYgHyT8uo.bosI5uYpN0PVmA6xdnhjT4jIFcbKbVS2RsiRC",
+      "password": "password02",
       "name": "Mario Rossi",
       "id": 3
     }

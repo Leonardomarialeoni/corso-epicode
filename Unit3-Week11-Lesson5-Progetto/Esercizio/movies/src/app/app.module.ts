@@ -11,6 +11,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { MoviecontainerComponent } from './moviecontainer/moviecontainer.component';
 import { MoviecardComponent } from './moviecard/moviecard.component';
 import { UtentiComponent } from './utenti/utenti.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { UtentiComponent } from './utenti/utenti.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
