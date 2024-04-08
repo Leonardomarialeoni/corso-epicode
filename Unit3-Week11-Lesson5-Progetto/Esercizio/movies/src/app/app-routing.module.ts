@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent }, 
   { path: 'profile', component: ProfileComponent }, 
   { path: 'register', component: RegisterComponent }, 
-  { path: '**', redirectTo: '' } // Rotta di fallback per gestire gli URL non validi, reindirizza alla homepage
+  { path: '**', redirectTo: '' } 
 ];
 
 @NgModule({

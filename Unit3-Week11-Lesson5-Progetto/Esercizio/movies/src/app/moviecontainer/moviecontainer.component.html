@@ -1,0 +1,9 @@
+<div class="row">
+    <div *ngFor="let moviecard of movies" class="col-4">
+        <app-moviecard
+        [title]="moviecard.title"
+        [poster]="moviecard.poster_path"
+        [favorite]="isFavorite(moviecard.id)"
+        ></app-moviecard>
+    </div>
+</div>
