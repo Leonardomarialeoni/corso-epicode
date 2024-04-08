@@ -1,0 +1,7 @@
+<h1 class="text-center m-4 bg-danger fw-bold">I NOSTRI UTENTI</h1>
+
+<div class="container">
+<div *ngFor="let user of users" class="text-center border-custom">
+    <p> Name: {{user.name}}  |  Email: {{user.email}}</p>
+</div>
+</div>

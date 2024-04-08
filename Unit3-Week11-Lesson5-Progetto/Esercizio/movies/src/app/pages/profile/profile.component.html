@@ -1,1 +1,19 @@
-<p>profile works!</p>
+<h1 class="text-center m-4 bg-danger fw-bold">Il Tuo Profilo</h1>
+
+<div>
+    <h2 class="text-center text-white m-4 bg-dark fw-bold">I tuoi Dettagli</h2>
+    <p class="text-center fw-bold">Nome: {{user.name}}</p>
+    <p class="text-center fw-bold">Email: {{user.email}}</p>
+</div>
+
+<div>
+  <h2 class="text-center text-white m-4 bg-success fw-bold">
+    I Tuoi Preferiti
+  </h2>
+  <app-moviecontainer
+    [movies]="userMovies"
+    [user]="user"
+    [favorites]="favorites"
+  >
+  </app-moviecontainer>
+</div>

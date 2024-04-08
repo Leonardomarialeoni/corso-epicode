@@ -10,6 +10,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { MoviecontainerComponent } from './moviecontainer/moviecontainer.component';
 import { MoviecardComponent } from './moviecard/moviecard.component';
+import { UtentiComponent } from './utenti/utenti.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MoviecardComponent } from './moviecard/moviecard.component';
     ProfileComponent,
     RegisterComponent,
     MoviecontainerComponent,
-    MoviecardComponent
+    MoviecardComponent,
+    UtentiComponent
   ],
   imports: [
     BrowserModule,
