@@ -1,0 +1,14 @@
+.colgrad{
+    background: #ff416c;
+    background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.colbtn{
+  border: 1px solid #ff4b2b !important;
+color: #ff4b2b;
+}
+.over:hover{
+    scale: 1.1;
+    cursor: pointer;
+}

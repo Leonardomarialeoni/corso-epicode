@@ -1,0 +1,42 @@
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+}
+
+.card-img-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+.over:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.card-post,.grad {
+    background: #ff416c;
+    background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    border-radius: 0.25rem;
+    color: white;
+}
+
+.card-post-title {
+    font-size: 1rem;
+}
+
+.card-post-text {
+    font-size: 0.875rem;
+}
+
+.img-small {
+    max-width: 300px;
+    height: 300px;
+}

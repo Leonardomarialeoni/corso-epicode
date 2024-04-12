@@ -1,0 +1,83 @@
+<div class="container-fluid grad pt-5" *ngIf="users" >
+    <div class="row ">
+        <div class="container-fluid text-center m-5 col-2">
+            <ng-template #content let-c="close" let-d="dismiss">
+                <div class="modal-header ">
+                    <h4 class="modal-title " id="modal-basic-title">
+                        Create New Post!
+                    </h4>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        aria-label="Close"
+                        (click)="d('Cross click')"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-container sign-up-container">
+                        <form #newPost="ngForm" (ngSubmit)="save(newPost)">
+                            <input
+                                type="text"
+                                placeholder="Insert Title..."
+                                id="title"
+                                name="title"
+                                required
+                                class="form-control "
+                                ngModel
+                            />
+                            <input
+                                type="text"
+                                placeholder="Write a post..."
+                                id="body"
+                                name="body"
+                                required
+                                class="form-control"
+                                [mentionConfig]="{
+                                    items: users,
+                                    triggerChar: '@',
+                                    maxItems: 10,
+                                    labelKey: 'username'
+                                }"
+                                [mentionListTemplate]="mentionListTemplate"
+                                ngModel
+                            />
+                            <input
+                                type="url"
+                                placeholder="Insert picture..."
+                                id="images"
+                                name="images"
+                                required
+                                class="form-control"
+                                ngModel
+                            />
+                            <button
+                                class="btn mt-2"
+                                type="submit"
+                                (click)="c('Save click')"
+                                [disabled]="newPost.invalid"
+                            >
+                                Publish!
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline-dark" (click)="c('Save click')" [disabled]="newPost.invalid">Save</button>
+                </div> -->
+            </ng-template>
+
+            <button
+                class="btn btn-lg over btn-outline-light"
+                (click)="open(content)"
+            >
+                Create New Post
+            </button>
+        </div>
+        <app-post class="col-8"></app-post>
+    </div>
+    <ng-template #mentionListTemplate let-item="item">
+        <img class="mr-3" src="{{item.photoUrl}}" alt="" width="30" height="30">
+        &nbsp;
+        <span>{{item.username}}</span>
+      </ng-template>
+</div>

@@ -1,0 +1,48 @@
+
+<div class="container" #container>
+  <div class="form-container sign-up-container">
+    <form #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm)">
+      <h1>Create Account</h1>
+      <div class="social-container">
+        <!-- <a href="#" class="social"><i class="fab fa-facebook-f"></i></a> -->
+        <a class="over"><app-google-signin class="social " (loginWithGoogle)="googleSignin($event)"></app-google-signin></a>
+        <!-- <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
+      </div>
+      <span>or use your email for registration</span>
+      <input  type="text" placeholder="username" id="username" name="username" required class="form-control " ngModel />
+      <input type="url" placeholder="Url Avatar" id="photoUrl" name="photoUrl" required class="form-control " ngModel />
+      <input type="email" placeholder="Email" id="email" name="email" required class="form-control " ngModel  />
+      <input type="password" placeholder="Password" id="password" name="password" required class="form-control " ngModel />
+      <button class="mt-2 over overEd" type="submit" [disabled]="signupForm.invalid" >Registrati</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <h1>Sign in</h1>
+      <div class="social-container">
+        <!-- <a href="#" class="social"><i class="fab fa-facebook-f"></i></a> -->
+        <a class="over"><app-google-signin class="social" (loginWithGoogle)="googleSignin($event)"></app-google-signin></a>
+        <!-- <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
+      </div>
+      <span>or use your account</span>
+      <input type="email" placeholder="Email" name="email" id="email" required class="form-control" ngModel/>
+      <input type="password" placeholder="Password" name="password" id="password" required class="form-control" ngModel />
+      <a class="mt-1">Forgot your password?</a>
+      <button type="submit " class="overEd over " [disabled]="loginForm.invalid" >Accedi</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Welcome Back!</h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <button class="ghost over" (click)="signIn()">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Hello, Friend!</h1>
+        <p>Enter your personal details and start journey with us</p>
+        <button class="ghost over" (click)="signUp()">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>

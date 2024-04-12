@@ -1,0 +1,19 @@
+.btn {
+    background-color: white;
+    color: #fe635f;
+    font-weight: bold;
+}
+
+.btn:hover{
+  background-color: #fe635f;
+    color: white;
+}
+
+.grad {
+    background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+.over:hover{
+  scale: 1.1;
+  cursor: pointer;
+}

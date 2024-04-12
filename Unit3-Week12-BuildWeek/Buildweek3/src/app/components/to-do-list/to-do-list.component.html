@@ -1,0 +1,43 @@
+<section class=" gradient-custom-2 ">
+  <div class="container-fluid grad py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-12 col-xl-10">
+        <div class="card mask-custom">
+          <div class="card-body p-4 text-white">
+            <table class="table text-white mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Utenti</th>
+                  <th scope="col">Compiti</th>
+                </tr>
+              </thead>
+              <tbody>
+                <ng-container *ngFor="let user of users">
+                  <tr class="fw-normal">
+                    <td>
+                      <div class="d-flex align-items-center rounded-6 ">
+                        <img [src]="user.photoUrl" alt="avatar" class="rounded-circle" style="width: 45px; height: auto;">
+                        <span class="ms-2 d">{{user.name}} -
+                          {{user.username}}</span>
+                      </div>
+                    </td>
+                    <td class="text-start suca">
+                      <div *ngFor="let item of todos; let i = index">
+                        <div *ngIf="item.userId === user.id">
+                          <input class="form-check-input me-2" type="checkbox" [checked]="item.completed"
+                            aria-label="..." (change)="toggleCompletion(i)" />
+                          <span [ngClass]="{'text-decoration-line-through': item.completed}">{{
+                            item.todo}}</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
