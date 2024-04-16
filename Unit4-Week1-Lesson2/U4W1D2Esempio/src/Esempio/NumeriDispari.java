@@ -1,3 +1,5 @@
+package Esempio;
+
 public class NumeriDispari {
     public static void main(String[] args) {
         // stampaNumeriDispariWhile();

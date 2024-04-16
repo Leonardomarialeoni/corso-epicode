@@ -1,3 +1,5 @@
+package Esempio;
+
 import java.util.Scanner;
 
 public class BigliettoSwitch {
